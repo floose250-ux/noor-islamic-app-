@@ -67,11 +67,6 @@ class ThemeProvider extends ChangeNotifier {
         ),
         iconTheme: const IconThemeData(color: Color(0xFF1A5F4A)),
       ),
-      textTheme: TextTheme(
-        displayLarge: GoogleFonts.amiri(color: const Color(0xFF2C3E50)),
-        bodyLarge: GoogleFonts.cairo(color: const Color(0xFF2C3E50)),
-        bodyMedium: GoogleFonts.cairo(color: const Color(0xFF2C3E50)),
-      ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           backgroundColor: const Color(0xFF1A5F4A),
@@ -116,12 +111,6 @@ class ThemeProvider extends ChangeNotifier {
         ),
         iconTheme: const IconThemeData(color: Color(0xFFD4A574)),
       ),
-      textTheme: TextTheme(
-        displayLarge: GoogleFonts.amiri(color: const Color(0xFFE8E8E8)),
-        bodyLarge: GoogleFonts.cairo(color: const Color(0xFFE8E8E8)),
-        bodyMedium: GoogleFonts.cairo(color: const Color(0xFFE8E8E8)),
-      ),
     );
   }
 }
-
