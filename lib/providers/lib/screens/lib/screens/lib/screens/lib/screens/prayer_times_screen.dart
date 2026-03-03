@@ -59,4 +59,3 @@ class PrayerTimesScreen extends StatelessWidget {
     );
   }
 }
-
