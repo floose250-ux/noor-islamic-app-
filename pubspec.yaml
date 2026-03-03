@@ -1,0 +1,47 @@
+name: noor_islamic_app
+description: تطبيق نور الإسلامي المتكامل
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  
+  provider: ^6.0.5
+  shared_preferences: ^2.2.1
+  intl: ^0.18.1
+  adhan: ^2.0.0
+  geolocator: ^10.0.0
+  flutter_qiblah: ^2.2.0
+  google_fonts: ^6.1.0
+  flutter_animate: ^4.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/data/quran.json
+    
+  fonts:
+    - family: Amiri
+      fonts:
+        - asset: assets/fonts/Amiri-Regular.ttf
+        - asset: assets/fonts/Amiri-Bold.ttf
+          weight: 700
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Regular.ttf
+        - asset: assets/fonts/Cairo-Bold.ttf
+          weight: 700
