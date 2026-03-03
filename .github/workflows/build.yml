@@ -14,7 +14,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      # ✅ استخدم Flutter 3.7.12 القديم المتوافق
+      # ✅ Flutter قديم متوافق مع مشروعك
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.7.12'
