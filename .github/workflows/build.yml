@@ -11,12 +11,13 @@ jobs:
 
       - uses: actions/setup-java@v4
         with:
-          java-version: '11'  # استخدم Java 11
+          java-version: '17'
           distribution: 'temurin'
 
+      # ✅ استخدم Flutter 3.7.12 القديم المتوافق
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.7.12'  # Flutter قديم متوافق
+          flutter-version: '3.7.12'
           channel: 'stable'
 
       - run: flutter pub get
