@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:adhan/adhan.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'package:intl/intl.dart';
 
 class PrayerTimesProvider extends ChangeNotifier {
@@ -118,5 +117,18 @@ class PrayerTimesProvider extends ChangeNotifier {
   String formatTime(DateTime? time) {
     if (time == null) return '--:--';
     return DateFormat('HH:mm').format(time);
+  }
+
+  List<Map<String, dynamic>> get allPrayersToday {
+    if (_prayerTimes == null) return [];
+    
+    return [
+      {'name': 'الفجر', 'time': fajr, 'icon': Icons.wb_twilight},
+      {'name': 'الشروق', 'time': sunrise, 'icon': Icons.wb_sunny},
+      {'name': 'الظهر', 'time': dhuhr, 'icon': Icons.sunny},
+      {'name': 'العصر', 'time': asr, 'icon': Icons.wb_sunny_outlined},
+      {'name': 'المغرب', 'time': maghrib, 'icon': Icons.wb_twilight_rounded},
+      {'name': 'العشاء', 'time': isha, 'icon': Icons.nights_stay},
+    ];
   }
 }
