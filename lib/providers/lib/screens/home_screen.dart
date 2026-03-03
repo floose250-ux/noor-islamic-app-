@@ -40,9 +40,9 @@ class HomeScreen extends StatelessWidget {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
-                              _getIslamicDate(),
-                              style: const TextStyle(
+                            const Text(
+                              '١٤ رمضان ١٤٤٥ هـ',
+                              style: TextStyle(
                                 color: Colors.white70,
                                 fontSize: 14,
                                 fontFamily: 'Cairo',
@@ -150,8 +150,6 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  String _getIslamicDate() => '١٤ رمضان ١٤٤٥ هـ';
-
   Widget _buildSectionTitle(String title) {
     return Row(
       children: [
@@ -196,9 +194,9 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      child: Column(
+      child: const Column(
         children: [
-          const Text(
+          Text(
             'وَأَقِمِ الصَّلَاةَ لِدُلُوكِ الشَّمْسِ إِلَىٰ غَسَقِ اللَّيْلِ وَقُرْآنَ الْفَجْرِ ۖ إِنَّ قُرْآنَ الْفَجْرِ كَانَ مَشْهُودًا',
             style: TextStyle(
               fontSize: 20,
@@ -208,8 +206,8 @@ class HomeScreen extends StatelessWidget {
             textAlign: TextAlign.center,
             textDirection: TextDirection.rtl,
           ),
-          const SizedBox(height: 12),
-          const Text(
+          SizedBox(height: 12),
+          Text(
             'الإسراء: ٧٨',
             style: TextStyle(
               fontSize: 12,
