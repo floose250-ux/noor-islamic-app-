@@ -14,10 +14,10 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      # ✅ Flutter قديم متوافق مع مشروعك
+      # ✅ Flutter 3.24 (يدعم Dart 3.0+)
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.7.12'
+          flutter-version: '3.24.0'
           channel: 'stable'
 
       - run: flutter pub get
