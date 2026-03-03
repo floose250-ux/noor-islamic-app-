@@ -51,4 +51,3 @@ class AthkarScreen extends StatelessWidget {
     );
   }
 }
-
